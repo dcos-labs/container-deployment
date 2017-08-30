@@ -1,0 +1,18 @@
+{
+  "id": "/app-server",
+  "description": "App definition version 1.",
+    "cpus": 0.5,
+    "mem": 32,
+    "disk": 0,
+    "instances": 1,
+    "container": {
+      "type": "DOCKER",
+      "volumes": [],
+      "docker": {
+        "image": "joergs/app-server"
+      }
+  },
+  "env": {
+    "APP_SECRET" : "<ENTER SECRET KEY HERE> "
+  }
+}
