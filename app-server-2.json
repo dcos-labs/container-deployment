@@ -1,0 +1,23 @@
+{
+  "id": "/app-server-2",
+  "description": "App definition version 2.",
+  "cmd": "./appServer-linux",
+  "cpus": 0.5,
+  "mem": 256,
+  "fetch": [
+    {
+      "uri": "https://s3.amazonaws.com/downloads.mesosphere.io/dcos-demo/deployments/appServer-linux",
+      "extract": true,
+      "executable": true,
+      "cache": false
+    }
+  ],
+  "APP_SECRET": {
+    "secret": "token0"
+  },
+  "secrets": {
+    "token0": {
+      "source": "token"
+    }
+  }
+}
